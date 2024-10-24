@@ -8,7 +8,6 @@ authors = ["author <author@example.com>"]
 python = "^3.11"
 
 [tool.poetry.group.dev.dependencies]
-pre-commit = "^3.0.4"
 isort = "^4.3.21"
 pytest = "8.3.3"
 mypy = "^0.961"

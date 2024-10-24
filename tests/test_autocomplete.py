@@ -18,4 +18,6 @@ def test_letters_combination(t9autocomplete: T9AutoComplete):
 def test_suggest(t9autocomplete: T9AutoComplete):
     t9autocomplete.initiate_from_file(TEST_WORDS_FILE)
     suggestions = t9autocomplete.suggest("23")
+    expected_suggestions = set(["adactyl", "adactylia", "aeacides", "aeacides", "aeacus", "afaint"])
     assert suggestions is not None and len(suggestions) == 5
+    assert set(suggestions) <= expected_suggestions

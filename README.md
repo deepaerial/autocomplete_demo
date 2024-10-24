@@ -12,8 +12,7 @@ Run command below to install the project and its dependencies:
 $ poetry install
 ```
 
-## Setting up pre-commit hooks
-Run command below to setup pre-commit hooks:
-```shell
-$ poetry run pre-commit install
+## Running
+```
+$ ./run.sh
 ```
